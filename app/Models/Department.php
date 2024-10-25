@@ -10,4 +10,14 @@ class Department extends Model
     use HasFactory;
 
     protected $fillable=['name','code','phone'];
+
+    public function team()
+    {
+        return $this->hasMany(Team::class);
+    }
+
+    public function compliant()
+    {
+        return $this->hasMany(Complaints::class);
+    }
 }

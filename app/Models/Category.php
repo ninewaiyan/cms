@@ -18,4 +18,10 @@ class Category extends Model
     public function parent(){
         return $this->belongsTo($this,'parent_id');
     }
+
+
+    public function compliant()
+    {
+        return $this->hasMany(Complaints::class);
+    }
 }

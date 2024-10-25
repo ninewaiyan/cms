@@ -58,7 +58,7 @@
 
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="{{route('compliants.index')}}">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Complaints</span></a>
             </li>
@@ -68,6 +68,12 @@
                 <a class="nav-link" href="{{route('users.index')}}">
                     <i class="fas fa-fw fa-chart-area"></i>
                     <span>Users</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{route('teams.index')}}">
+                    <i class="fas fa-fw fa-chart-area"></i>
+                    <span>Team</span></a>
             </li>
 
             <!-- Nav Item - Pages Collapse Menu -->
